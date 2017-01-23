@@ -30,7 +30,7 @@ public class CalibrationScript : MonoBehaviour
             Transform controllerPosition = null;
             if (controller1.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
                 controllerPosition = controller1.transform.position;
-            else if (controller1.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
+            else if (controller2.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
                 controllerPosition = controller2.transform.position;
 
             if (P1 == null)
